@@ -1,0 +1,78 @@
+html {
+  background-image: url("img/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  animation-name: example;
+  animation-duration: 15s;
+}
+
+body {
+  background-color: #ffffffb3;
+  width: 600px;
+  padding-top: 30px;
+  margin: 25px auto;
+  border-radius: 10px;
+  text-align: center;
+  font-family: cursive;
+}
+
+button {
+  font-variant: small-caps;
+  padding: 8px 20px;
+
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#Flag {
+  height: 300px;
+  width: 75px auto;
+}
+
+/*  If you stack color elements on top of each other with a animation element and put how much seconds u want you can have a RGB Font*/
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  20% {
+    color: orange;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.country {
+  animation: rainbow 2s infinite;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    background-image: url("img/canada.jpg");
+  }
+  25% {
+    background-image: url("img/united.jpg");
+  }
+  50% {
+    background-image: url("img/phili.jpg");
+  }
+  100% {
+    background-image: url("img/niger.jpg");
+  }
+}
